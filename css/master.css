@@ -1,3 +1,361 @@
-// Importações
+@font-face {
+    font-family:Belwe Bold;
+    src:url(https://d2q63o9r0h0ohi.cloudfront.net/fonts/Belwe-Bold-b6169fc4bb36b8371d3ccf147929cda79ce37c2059c3abf162270bd9eddb98aed1a62c78dd1af68df8f6a3a239ad5d0f2cdf671b7e16425f74065d7e70fe0a2e.eot);
+    src:url(https://d2q63o9r0h0ohi.cloudfront.net/fonts/Belwe-Bold-b6169fc4bb36b8371d3ccf147929cda79ce37c2059c3abf162270bd9eddb98aed1a62c78dd1af68df8f6a3a239ad5d0f2cdf671b7e16425f74065d7e70fe0a2e.eot#iefix) format("embedded-opentype"),url(https://d2q63o9r0h0ohi.cloudfront.net/fonts/Belwe-Bold-9a6521fdfa97c59b38cf872354f166fb40b3c89d1026766795dde6540c536f34f3b30fd0fad9039d9457f80e5136d28400a3c1f5b2a73ecbd931b03d0fbfb840.woff) format("woff"),url(https://d2q63o9r0h0ohi.cloudfront.net/fonts/Belwe-Bold-f53d10b5e1ed94ba65a88b534f1220b01c65ac758c01fff671227644cad3bec8e8bae0a34b5cb14d741a3c089bd8d63bfb0880bf40fb811bab1b682711357287.ttf) format("truetype"),url(/fonts/Belwe-Bold.svg#Belwe\ Bold) format("svg");
+    font-weight:400;
+    font-style:normal;
+    font-stretch:normal
+}
 
-@import ./cards.css
+/* BARRA SUPERIOR / MENU */
+
+header {
+    font-family: Belwe Bold, Sans-serif;
+    background: #161b2a;
+    border-bottom: 1px solid #272d53;
+}
+header ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100px;
+    justify-content: space-between;
+}
+header li a{
+    color: #c9c186;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#druida:active {
+    opacity: 1;
+}
+
+body {
+    background: #0e1018;
+    margin: 0;
+    font-family: Tahoma, sans serif;
+}
+
+/* FILTROS DE PESQUISA */
+
+
+
+.buttons-filter {
+    display: flex;
+    justify-content: space-between;
+    /*! overflow-x: scroll; */
+    /*! position: relative; */
+    /*! top: 15px; */
+    max-width: 960px;
+    margin: 0 auto;
+}
+.buttons-filter button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+.buttons-filter div {
+    min-width: 80px;
+    height: 66px;
+}
+.buttom-druid {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: -387px;
+    background-position-y: 441px;
+    opacity: .8;
+}
+.buttom-druid:hover {
+    opacity: 1;
+}
+.buttom-hunter {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: -307px;
+    background-position-y: 355px;
+    opacity: .8;
+}
+.buttom-hunter:hover {
+    opacity: 1;
+}
+.buttom-mage {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: -387px;
+    background-position-y: 355px;
+    opacity: .8;
+}
+.buttom-mage:hover {
+    opacity: 1;
+}
+.buttom-paladin {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: -387px;
+    background-position-y: 269px;
+    opacity: .8;
+}
+.buttom-paladin:hover {
+    opacity: 1;
+}
+.buttom-priest {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: -614px;
+    background-position-y: 183px;
+    opacity: .8;
+}
+.buttom-priest:hover {
+    opacity: 1;
+}
+.buttom-rogue {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: -694px;
+    background-position-y: 183px;
+    opacity: .8;
+}
+.buttom-rogue:hover {
+    opacity: 1;
+}
+.buttom-shaman {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: 0px;
+    background-position-y: 66px;
+    opacity: .8;
+}
+.buttom-shaman:hover {
+    opacity: 1;
+}
+.buttom-warlock {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: -80px;
+    background-position-y: 66px;
+    opacity: .8;
+}
+.buttom-warlock:hover {
+    opacity: 1;
+}
+.buttom-warrior {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: -160px;
+    background-position-y: 66px;
+    opacity: .8;
+}
+.buttom-warrior:hover {
+    opacity: 1;
+}
+.buttom-neutral {
+    background-image: url(../img/card-gallery-class.png);
+    background-position-x: -307px;
+    background-position-y: 269px;
+    opacity: .8;
+}
+.buttom-neutral:hover {
+    opacity: 1;
+}
+
+/* CARDS */
+
+.cards {
+    justify-content: center;
+    display: grid;
+    justify-items: center;
+    background: #0e1018;
+    /*! padding: 10px; */
+    position: relative;
+    z-index: 0;
+    /*! border-top: 4px solid #c6b282; */
+    /*! box-shadow: inset 0px 0px 20px #775917; */
+    /*! margin-bottom: 30px; */
+    /*! border-bottom: 4px solid #836c37; */
+}
+@media screen and (min-width:477px){
+    .cards {
+        grid-template-columns: repeat(2,auto);
+    }
+}
+@media screen and (min-width:699px){
+    .cards {
+        grid-template-columns: repeat(3,auto);
+    }
+}
+@media screen and (min-width:920px){
+    .cards {
+        grid-template-columns: repeat(4,auto);
+    }
+}
+@media screen and (min-width:1140px){
+    .cards {
+        grid-template-columns: repeat(5,auto);
+    }
+}
+@media screen and (min-width:1361px){
+    .cards {
+        grid-template-columns: repeat(6,auto);
+    }
+}
+
+/* CONFIGURAÇÕES DO CARD */
+
+.card {
+    position: relative;
+    margin: 10px;
+}
+.card img {
+    max-height: 300px;
+    transition: all .6s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+
+.credits {
+    background: #161b2a;
+    border: 1px solid #354960;
+    color: #b0afa8;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 10pt;
+    padding-top: 16px;
+}
+
+/* SOCIAL MIDIAS */
+
+.social-midias {
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    background: #1a2739;
+    border-top: 1px solid #354960;
+}
+
+.social-midias a{
+    height: 69px;
+    width: 65px;
+    background: #fff0;
+    margin: 0 10px;
+    opacity: .8;
+}
+.social-midias .lattes {
+    background-image: url(../img/icon/lattes.png);
+    background-size: cover;
+}
+.social-midias .github {
+    background-image: url(../img/icon/github.png);
+    background-size: cover;
+}
+.social-midias .linkedin {
+    background-image: url(../img/icon/linkedin.png);
+    background-size: cover;
+}
+.social-midias .lattes:hover {
+    opacity: 1;
+}
+.social-midias .github:hover {
+    opacity: 1;
+}
+.social-midias .linkedin:hover {
+    opacity: 1;
+}
+
+.img {
+    position: relative;
+    height: 59px;
+}
+
+.text-card {
+    position: absolute;
+    background-image: linear-gradient(to right, #000 45%, #fff0 80%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: -16px;
+    width: 100%;
+    color: #fff;
+    padding-left: 15px;
+    font-family: Belwe Bold, Sans-serif;
+}
+
+.num-deck {
+    font-family: Belwe Bold, Sans-serif;
+    color: #fff;
+    width: 28px;
+    background: #0d65a7;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20pt;
+}
+
+.mana { background: #0d65a7;}
+.LEGENDARY { background: rgb(255, 209, 4)}
+.EPIC { background: #830da7;}
+.RARE { background: #0d65a7;}
+.COMMON { background: rgb(151, 151, 151)}
+
+
+.row-card {
+    display: flex;
+    border: 2px solid #000;
+}
+
+.deck {
+    display: grid;
+    justify-items: center;
+    background: #e7d4a9;
+    padding: 10px;
+    position: relative;
+    z-index: 0;
+    border-top: 4px solid #c6b282;
+    box-shadow: inset 0px 0px 20px #775917;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #836c37;
+    grid-gap: 2px;
+}
+
+.hero{
+    opacity: 0.7;
+    border: 1px solid #c3be95;
+    height: 130px;
+    width: 130px;
+}
+
+@media screen and (min-width:500px) {
+    .hero {
+        height: 200px
+    }
+}
+
+.hero:hover {
+    opacity: 1
+}
+
+.heroes {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: #0e1018;
+    padding: 10px;
+    grid-gap: 10px;
+    margin: 53px 0;
+}
+
+@media screen and (min-width: 500px){
+    .heroes {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (min-width: 620px){
+    .heroes {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media screen and (min-width: 760px){
+    .heroes {
+        grid-template-columns: repeat(5,1fr);
+    }
+}
