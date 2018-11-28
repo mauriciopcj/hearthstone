@@ -1,4 +1,4 @@
-## Hearthstone | Cards Library
+# Hearthstone | Cards Library
 
-# Interface
+## Interface
 
