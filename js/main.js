@@ -31,9 +31,6 @@ function cardsHTML1(vetorObjetos){
     for(let card of previa) {
         result += `    <div class="card" id="${card.id}">
         <img onclick="moreinfo('${card.id}')" onmouseover="show('${card.id}')" onmouseout="none('${card.id}')" src="https://art.hearthstonejson.com/v1/render/latest/ptBR/256x/${card.id}.png">
-        <div class="shadow" style="display:none">
-            <p>Clique e veja mais informações antes de adiconar ao seu deck.</p>
-        </div>
     </div>\n`
     }
     return result
@@ -64,6 +61,7 @@ function moreinfo(ID){
             <p>Coleção: ${translate[carta[0].set]}</p>
             <p>Texto: ${carta[0].text}</p>
             <p>Tipo: ${translate[carta[0].type]}</p>
+            <p>Ataque: ${carta[0].attack}</p>
             <p>Vida: ${carta[0].health}</p>
             <div onclick="addDeck('${carta[0].id}')" class="addDeck"></div>
         </div>
@@ -111,6 +109,7 @@ function filtros(){
     let result = ''
     for (let e of classe){
         result += `            <div class="hero" onclick="adicionar('${e}')" style="background-image: url(img/heroes/heroes-${e.toLowerCase()}.png);">
+                <div class="hero_name">${translate[e]}</div>
             </div>` 
     }
     result += `            <div class="hero" onclick="adicionar('ALL')" style="background-image: url(img/heroes/heroes-all.png);background-position:center">
