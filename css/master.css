@@ -36,6 +36,10 @@ header li a{
 #druida:active {
     opacity: 1;
 }
+.menu {
+    max-width: 960px;
+    margin:0 auto;
+}
 body {
     background: #0e1018;
     margin: 0;
@@ -76,8 +80,8 @@ body {
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
     background: #0e1018;
-    /* position: relative; */
-    /* z-index: 0; */
+    max-width: 960px;
+    margin: 0 auto;
 }
 @media screen and (min-width: 560px){
     .cards {
@@ -92,11 +96,6 @@ body {
 @media screen and (min-width: 920px){
     .cards {
         grid-template-columns: repeat(5,auto);
-    }
-}
-@media screen and (min-width: 1100px){
-    .cards {
-        grid-template-columns: repeat(6,auto);
     }
 }
 
@@ -339,11 +338,14 @@ body {
     grid-gap: 2px;
 }
 
+/* HEROIS */
+
 .hero{
-    opacity: 0.7;
     border: 1px solid #c3be95;
-    height: 130px;
-    width: 130px;
+    height: 110px;
+    width: 110px;
+    background-position-x: center;
+    border-radius: 10px;
 }
 
 @media screen and (min-width:500px) {
@@ -353,7 +355,7 @@ body {
 }
 
 .hero:hover {
-    opacity: 1
+    box-shadow: 0 0 10px #e1ae46;
 }
 
 .heroes {
@@ -361,27 +363,47 @@ body {
     grid-template-columns: repeat(2,1fr);
     background: #0e1018;
     padding: 10px;
-    grid-gap: 10px;
+    grid-gap: 30px;
     margin: 53px auto;
     justify-items: center;
-    max-width: 700px;
+    max-width: 254px;
+    background: linear-gradient(#0008,#0003);
+}
+
+.hero_name {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom:-90px;
+    font-family: Belwe Bold, Sans-serif;
+    color: #fff;
+    background: linear-gradient(#0009,#0003);
+    border-top:1px solid #c3be95;
 }
 
 @media screen and (min-width: 500px){
     .heroes {
         grid-template-columns: repeat(3,1fr);
+        max-width: 395px;
+    }
+    .hero_name {
+        bottom: -158px;
+        height: 40px;        
+        align-items: center
     }
 }
 
 @media screen and (min-width: 620px){
     .heroes {
         grid-template-columns: repeat(4,1fr);
+        max-width: 538px;
     }
 }
 
 @media screen and (min-width: 760px){
     .heroes {
         grid-template-columns: repeat(5,1fr);
+        max-width: 681px;
     }
 }
 
