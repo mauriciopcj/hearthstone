@@ -106,14 +106,12 @@ function cardsHTML2(vetorObjetos){
 
 function filtros(){
     let classe = heroes
-    let result = ''
+    let result = '<div class="choise">Escolha uma classe</div>'
     for (let e of classe){
         result += `            <div class="hero" onclick="adicionar('${e}')" style="background-image: url(img/heroes/heroes-${e.toLowerCase()}.png);">
                 <div class="hero_name">${translate[e]}</div>
             </div>` 
     }
-    result += `            <div class="hero" onclick="adicionar('ALL')" style="background-image: url(img/heroes/heroes-all.png);background-position:center">
-            </div>` 
     return result
 }
 
