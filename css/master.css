@@ -342,16 +342,15 @@ body {
 
 .hero{
     border: 1px solid #c3be95;
-    height: 110px;
-    width: 110px;
+    height: 35vw;
+    width: 85vw;
+    background-position-y: -30px;
+    /*! border-radius: 15px 0px; */
     background-position-x: center;
-    border-radius: 10px;
-}
-
-@media screen and (min-width:500px) {
-    .hero {
-        height: 200px
-    }
+    max-width: 402px;
+    position: relative;
+    box-shadow: inset 0px 0px 15px #000;
+    max-height: 180px;
 }
 
 .hero:hover {
@@ -360,52 +359,53 @@ body {
 
 .heroes {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
     background: #0e1018;
     padding: 10px;
-    grid-gap: 30px;
-    margin: 53px auto;
+    grid-gap: 6vw;
+    margin: 0 auto 50px auto;
     justify-items: center;
-    max-width: 254px;
+    max-width: 960px;
 }
 
 .hero_name {
     display: flex;
-    justify-content: center;
-    position: relative;
-    bottom:-90px;
+    position: absolute;
+    bottom:0;
     font-family: Belwe Bold, Sans-serif;
     color: #fff;
-    background: linear-gradient(#0009,#0003);
-    border-top:1px solid #c3be95;
+    background: linear-gradient(to right,#0009,#0000);
+    height: 20px;
+    align-items: end;
+    padding: 10px;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 560px){
+    .hero {
+        width: 100%;
+    }
     .heroes {
         grid-template-columns: repeat(3,1fr);
-        max-width: 395px;
+        grid-gap: 30px;
     }
-    .hero_name {
-        bottom: -158px;
-        height: 40px;        
-        align-items: center
+    .choise {
+        grid-column: 1/4;
     }
 }
 
-@media screen and (min-width: 620px){
-    .heroes {
-        grid-template-columns: repeat(4,1fr);
-        max-width: 538px;
-    }
+.choise {
+    width: 320px;
+    height: 36px;
+    background-image: url('../img/card-gallery-class.png');
+    background-position-x: 0px;
+    background-position-y: 100px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff8c8;
+    font-family: Belwe Bold, sans-serif;
+    text-transform: uppercase;
 }
-
-@media screen and (min-width: 760px){
-    .heroes {
-        grid-template-columns: repeat(5,1fr);
-        max-width: 681px;
-    }
-}
-
 /* arte com nome da classe das cartas filtradas */
 
 .art {
