@@ -350,7 +350,7 @@ body {
     max-width: 402px;
     position: relative;
     box-shadow: inset 0px 0px 15px #000;
-    max-height: 180px;
+    max-height: 150px;
 }
 
 .hero:hover {
