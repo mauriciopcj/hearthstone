@@ -30,7 +30,7 @@ function cardsHTML1(vetorObjetos){
     let result = ''
     for(let card of previa) {
         result += `    <div class="card" id="${card.id}">
-        <img onclick="moreinfo('${card.id}')" onmouseover="show('${card.id}')" onmouseout="none('${card.id}')" src="https://art.hearthstonejson.com/v1/render/latest/ptBR/256x/${card.id}.png">
+        <img onclick="moreinfo('${card.id}')" src="https://art.hearthstonejson.com/v1/render/latest/ptBR/256x/${card.id}.png">
     </div>\n`
     }
     return result
@@ -85,6 +85,7 @@ function artInsert(classe){
 function adicionar(classe) {
     adicionar1(classe)
     document.getElementById("cards").insertAdjacentHTML('beforeBegin', artInsert(classe))
+    document.getElementById("class").selectedIndex = 3
 }
 
 // Cria a estrutura HTML de cada carta adicionada ao Deck
