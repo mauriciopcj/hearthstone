@@ -6,11 +6,35 @@ function getData(url) {
     fetch(url)
         .then(res => res.json())
         .then(json => library = json)
+    
 }
 
 getData('https://api.hearthstonejson.com/v1/28329/ptBR/cards.collectible.json')
 
-// função 
+
+function a(){
+    library.sort((a,b) => ordenandoJson(a,b))
+}
+
+function ordenandoJson(a,b){
+    if (a.cost > b.cost){
+        return 1
+    }
+    if (a.cost < b.cost){
+        return -1
+    }
+    if (a.cost == b.cost){
+        if (a.name > b.name){
+            return 1
+        }
+        if (a.name < b.name){
+            return -1
+        }
+        return 0
+    }
+}
+
+// função para criar a estrutura de cartas após escolher a classe
 
 function adicionar1(classe) {
     let lista
@@ -83,24 +107,10 @@ function artInsert(classe){
 }
 
 function adicionar(classe) {
+    a()
     adicionar1(classe)
     document.getElementById("cards").insertAdjacentHTML('beforeBegin', artInsert(classe))
     document.getElementById("class").selectedIndex = 3
-}
-
-// Cria a estrutura HTML de cada carta adicionada ao Deck
-
-function cardsHTML2(vetorObjetos){
-    let result = ''
-    for(let card of vetorObjetos) {
-        result += `        <div class="row-card">
-        <div><p class="mana num-deck">${card.cost}</p></div>
-        <div class="img"><p class="text-card">${card.name}</p><img src="https://art.hearthstonejson.com/v1/tiles/${card.id}.png"></div>
-        <div><p class="quant num-deck ${card.rarity}">2</p></div>
-    </div>
-`
-    }
-    return result
 }
 
 // função para criar os elementos da página inicial
