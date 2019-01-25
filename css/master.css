@@ -472,4 +472,5 @@ body {
     border-radius: 2px;
     position: absolute;
     bottom: 0;
+    transition: .3s height;
 }
