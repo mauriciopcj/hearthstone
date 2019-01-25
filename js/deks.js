@@ -16,6 +16,15 @@ function cardsHTML2(vetorObjetos){
     return result
 }
 
+// 
+
+function atualizaManaCurve(array){
+    for (i in array){
+        document.querySelector(`#curva_${i} div`).style.height = `${(array[i]*100/Math.max(...array))}%`
+        document.querySelector(`#quant_${i}`).innerHTML = `${array[i]}`
+    }
+}
+
 // adicionar a quantidade de cards por custo de mana
 
 function calcCurve(){
@@ -30,6 +39,7 @@ function calcCurve(){
         if (i[0] == 6) { manaCurve[6] += i[4] }
         if (i[0] >= 7) { manaCurve[7] += i[4] }
     }
+    atualizaManaCurve(manaCurve)
 }
 
 // função que adiciona o card ao deck quando clicado na imagem das cartas
@@ -53,8 +63,8 @@ function addDeck(ID){
             calcCurve()
         }
         deckConstructor.sort((a, b) => ordenandoDeck(a,b))
-        document.querySelector('#deck').innerHTML = cardsHTML2(deckConstructor)
-        document.querySelector('#deck').insertAdjacentHTML("beforeend", total)
+        document.querySelector('.deckCards').innerHTML = cardsHTML2(deckConstructor)
+        document.querySelector('.deckCards').insertAdjacentHTML("beforeend", total)
     }
 }
 
@@ -95,11 +105,11 @@ function existe(ID){
 // função para exibir e ocultar o deck clicando no botao "baralho"
 
 function exibirdeck(){
-    let baralho = document.querySelector('#deck').style.display
-    if(baralho == "none"){
-        document.querySelector('#deck').setAttribute('style','display:grid;')
+    let baralho = document.querySelector('#deck').style.right
+    if(baralho == "-324px"){
+        document.querySelector('#deck').setAttribute('style','right:0;')
     } else {
-        document.querySelector('#deck').setAttribute('style','display:none;')
+        document.querySelector('#deck').setAttribute('style','right:-324px;')
     }
 }
 
