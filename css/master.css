@@ -430,3 +430,35 @@ body {
 .art_hunter {background-position-x: -305px;background-position-y: -470px;}
 .art_warrior {background-position-x: -521px; background-position-y: -342px;}
 .art_all {background-position-x: 1px; background-position-y: -296px;}
+
+/* curva de mana no deck */
+
+.curvaMana {
+    display: flex;
+    width: 300px;
+    height: 150px;
+    justify-content: space-around;
+    background: #18182d;
+    border: 2px solid #000;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.curva {
+    background: #2d4669;
+    width: 20px;
+    height: 85%;
+    position: relative;
+    margin: 5px;
+    border-radius: 11px;
+}
+
+.curva div{
+    background: #fff;
+    width: 100%;
+    height: 0%;
+    border-radius: 11px;
+    position: absolute;
+    bottom: 0;
+}
