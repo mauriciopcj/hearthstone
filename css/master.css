@@ -329,8 +329,7 @@ body {
 .deck {
     justify-items: center;
     background: #2d4669;
-    padding: 10px 0;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     box-shadow: inset 0px 0px 20px #000;
     margin-bottom: 30px;
@@ -338,10 +337,20 @@ body {
     grid-gap: 2px;
     transition: right 1s;
     max-width: 304px;
-    right: -324px;
+    right: 0;
     padding: 9px;
     display: grid;
     justify-content: normal;
+    top: -500px;
+    overflow-y: auto;
+    max-height: 75vh;
+    transition: top 1s;
+}
+
+@media screen and (min-width:360px){
+    .deck {
+        padding: 9px 26px 9px 9px;
+    }
 }
 
 .deckCards {
@@ -473,4 +482,23 @@ body {
     position: absolute;
     bottom: 0;
     transition: .3s height;
+}
+
+.curveManaTotal {
+    display: flex;
+    justify-content: space-around;
+    width: 304px;
+    align-items: center;
+    padding: 5px 0;
+    background: #000;
+    color: #fff;
+}
+
+#totalArcane {
+    display: flex;
+    align-items: center;
+}
+
+#totalArcane img {
+    height: 25px;
 }

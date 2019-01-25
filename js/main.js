@@ -54,7 +54,7 @@ function cardsHTML1(vetorObjetos){
     let result = ''
     for(let card of previa) {
         result += `    <div class="card" id="${card.id}">
-        <img onclick="moreinfo('${card.id}')" src="https://art.hearthstonejson.com/v1/render/latest/ptBR/256x/${card.id}.png">
+        <img onclick="addDeck('${card.id}')" src="https://art.hearthstonejson.com/v1/render/latest/ptBR/256x/${card.id}.png">
     </div>\n`
     }
     return result

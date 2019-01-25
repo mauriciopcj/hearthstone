@@ -1,12 +1,13 @@
 let deckConstructor = []
-let manaCurve 
+let manaCurve
+let poArcano
 
 // Cria a estrutura HTML de cada carta adicionada ao Deck
 
 function cardsHTML2(vetorObjetos){
     let result = ''
     for(let card of vetorObjetos) {
-        result += `        <div class="row-card">
+        result += `        <div class="row-card" onclick="removeDeck('${card[1]}')">
         <div><p class="mana num-deck">${card[0]}</p></div>
         <div class="img"><p class="text-card">${card[2]}</p><img src="https://art.hearthstonejson.com/v1/tiles/${card[1]}.png"></div>
         <div><p class="quant num-deck ${card[3]}">${card[4]}</p></div>
@@ -16,11 +17,36 @@ function cardsHTML2(vetorObjetos){
     return result
 }
 
+function removeDeck(ID){
+    for (i in deckConstructor){
+        if (deckConstructor[i][1] == ID && deckConstructor[i][4] == 2){
+            deckConstructor[i][4] -= 1
+            total -= 1
+            calcCurve()
+            po()
+        } else {
+            if (deckConstructor[i][1] == ID && deckConstructor[i][4] == 1) {
+                deckConstructor.splice(i,1)
+                total -= 1
+                calcCurve()
+                po()
+            }
+        }
+    }
+    document.querySelector('.deckCards').innerHTML = cardsHTML2(deckConstructor)
+    document.querySelector('#totalCards').innerHTML = `${total}/30`
+    document.querySelector('#totalArcane').innerHTML = `${poArcano}<img src="img/dust.png">`
+}
+
 // 
 
 function atualizaManaCurve(array){
     for (i in array){
-        document.querySelector(`#curva_${i} div`).style.height = `${(array[i]*100/Math.max(...array))}%`
+        if (Math.max(...array) == 0) {
+            document.querySelector(`#curva_${i} div`).style.height = `0%`
+        } else {
+            document.querySelector(`#curva_${i} div`).style.height = `${(array[i]*100/Math.max(...array))}%`
+        }
         document.querySelector(`#quant_${i}`).innerHTML = `${array[i]}`
     }
 }
@@ -42,6 +68,24 @@ function calcCurve(){
     atualizaManaCurve(manaCurve)
 }
 
+// quantidade de pó arcano com as cartas adicionadas ao deck
+
+const poConverte = {
+    "FREE" : "0",
+    "COMMON" : "50",
+    "RARE" : "100",
+    "EPIC" : "400",
+    "LEGENDARY" : "1600"
+}
+
+function po(){
+    let result = 0
+    for (i of deckConstructor){
+        result += poConverte[i[3]] * i[4]
+    }
+    poArcano = result
+}
+
 // função que adiciona o card ao deck quando clicado na imagem das cartas
 
 let total = 0
@@ -55,16 +99,19 @@ function addDeck(ID){
                     i[4] = 2
                     total += 1
                     calcCurve()
+                    po()
                 }
             }
         } else {
             deckConstructor.push([lista[0].cost,lista[0].id,lista[0].name,lista[0].rarity,1])
             total += 1
             calcCurve()
+            po()
         }
         deckConstructor.sort((a, b) => ordenandoDeck(a,b))
         document.querySelector('.deckCards').innerHTML = cardsHTML2(deckConstructor)
-        document.querySelector('.deckCards').insertAdjacentHTML("beforeend", total)
+        document.querySelector('#totalCards').innerHTML = `${total}/30`
+        document.querySelector('#totalArcane').innerHTML = `${poArcano}<img src="img/dust.png">`
     }
 }
 
@@ -105,11 +152,11 @@ function existe(ID){
 // função para exibir e ocultar o deck clicando no botao "baralho"
 
 function exibirdeck(){
-    let baralho = document.querySelector('#deck').style.right
-    if(baralho == "-324px"){
-        document.querySelector('#deck').setAttribute('style','right:0;')
+    let baralho = document.querySelector('#deck').style.top
+    if(baralho == "-500px"){
+        document.querySelector('#deck').setAttribute('style','top:101px;')
     } else {
-        document.querySelector('#deck').setAttribute('style','right:-324px;')
+        document.querySelector('#deck').setAttribute('style','top:-500px;')
     }
 }
 
