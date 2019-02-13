@@ -1,0 +1,84 @@
+/* PÁGINA DOS CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    background: #0e1018;
+    max-width: 960px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 560px){
+    .cards {
+        grid-template-columns: repeat(3,auto);
+    }
+}
+@media screen and (min-width: 740px){
+    .cards {
+        grid-template-columns: repeat(4,auto);
+    }
+}
+@media screen and (min-width: 920px){
+    .cards {
+        grid-template-columns: repeat(5,auto);
+    }
+}
+
+.shadow {
+    position: absolute;
+    top: -60px;
+    font-size: 13px;
+    background: #1a2739;
+    border-radius: 10px;
+    padding: 2px;
+    left: 10px;
+    right: 10px;
+    bottom: 203px;
+    border: 1px solid #c9c186;
+}
+
+/* CONFIGURAÇÕES DO CARD */
+
+.card {
+    position: relative;
+    background: none;
+    border:none;
+}
+.card img {
+    max-width: 150px;
+    transition: all .6s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 380px){
+    .card img {
+        max-width: 180px;
+    }
+}
+
+/* arte com nome da classe das cartas filtradas */
+
+.art {
+    display: flex;
+    max-width: 309px;
+    height: 84px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    background-image: url(../img/card-gallery-class.png);
+    font-family: Belwe Bold, sans-serif;
+    color: #fff8c8;
+    justify-content: center;
+    align-items: center;
+}
+.art_mage {background-position-x: -521px; background-position-y: -172px;}
+.art_druid {background-position-x: 1px; background-position-y: -470px;}
+.art_paladin {background-position-x: 1px; background-position-y: -382px;}
+.art_shaman {background-position-x: 1px; background-position-y: -212px;}
+.art_warlock {background-position-x: -521px; background-position-y: -257px;}
+.art_rogue {background-position-x: -521px; background-position-y: -85px;}
+.art_priest {background-position-x: -521px; background-position-y: 2px;}
+.art_hunter {background-position-x: -305px;background-position-y: -470px;}
+.art_warrior {background-position-x: -521px; background-position-y: -342px;}
+.art_all {background-position-x: 1px; background-position-y: -296px;}

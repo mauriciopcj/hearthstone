@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,81 +7,89 @@
     <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Hearthstone | Cards Library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#" onclick="exibirpesquisa()">Pesquisa</a></li>
+                <li><a href="#pesquisa" id="buttonSearch" aria-expanded="false" data-toggle="collapse" aria-controls="pesquisa" style="display:none">Pesquisa</a></li>
                 <a href="index.html"><li class="logo"></li></a>
-                <li><a href="#" onclick="exibirdeck()">Baralho</a></li>
+                <li><a href="#deck" id="buttonDeck" data-toggle="collapse" aria-expanded="false" aria-controls="deck" style="display:none">Baralho</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- filtros de pesquisa -->
 
-    <section id="pesquisa" class="filter" style="display:none;">
-        <select name="class" id="class">
-            <option value="ALL">CLASSE</option>
-            <option value="DRUID">Druida</option>
-            <option value="HUNTER">Caçador</option>
-            <option value="MAGE">Mago</option>
-            <option value="PALADIN">Paladino</option>
-            <option value="PRIEST">Sarcedote</option>
-            <option value="ROGUE">Ladino</option>
-            <option value="SHAMAN">Xamã</option>
-            <option value="WARLOCK">Bruxo</option>
-            <option value="WARRIOR">Guerreiro</option>
-        </select>
-        <select name="type" id="type">
-            <option value="ALL">TIPO</option>
-            <option value="MINION">Lacaio</option>
-            <option value="SPELL">Feitiço</option>
-            <option value="WEAPON">Arma</option>
-            <option value="HERO">Herói</option>
-        </select>
-        <select name="set" id="set">
-            <option value="ALL">EXPANSÃO</option>
-            <option value="TGT">O Grande Torneio</option>
-            <option value="BOMMSDAY">Projeto Cabum</option>
-            <option value="GANGS">Gangues de Geringontzan</option>
-            <option value="CORE">Clássico</option>
-            <option value="EXPERT1">Experiência</option>
-            <option value="HOF">Hall da Fama</option>
-            <option value="NAXX">Naxxaramas</option>
-            <option value="GILNEAS">Bosque das Bruxas</option>
-            <option value="GVG">Goblin VS Gnomos</option>
-            <option value="ICECROW">Cavaleiros do Trono de Gelo</option>
-            <option value="KARA">Karazham</option>
-            <option value="LOE">Liga dos Exploradores</option>
-            <option value="LOOTAPALOOZA">Kobolds e Catacumbas</option>
-            <option value="OG">Sussuros dos Deuses Antigos</option>
-            <option value="UNGORO">Jornada a Un`Goro</option>
-            <option value="BRM">Montanha Rocha Negra</option>
-            <option value="TROLL">Ringue de Rastakan</option>
-        </select>
+    <section id="pesquisa" class="collapse multi-collapse filter">
+        <div class="pesquisaLayout">
+            <select name="type" id="type">
+                <option value="ALL">TIPO</option>
+                <option value="ALL">Todos</option>
+                <option value="MINION">Lacaio</option>
+                <option value="SPELL">Feitiço</option>
+                <option value="WEAPON">Arma</option>
+                <!-- <option value="HERO">Herói</option> -->
+            </select>
+            <select name="set" id="set">
+                <option value="ALL">EXPANSÃO</option>
+                <option value="ALL">Todas</option>
+                <option value="TGT">O Grande Torneio</option>
+                <option value="BOOMSDAY">Projeto Cabum</option>
+                <option value="GANGS">Gangues de Geringontzan</option>
+                <option value="CORE">Clássico</option>
+                <option value="EXPERT1">Experiência</option>
+                <option value="HOF">Hall da Fama</option>
+                <option value="NAXX">Naxxaramas</option>
+                <option value="GILNEAS">Bosque das Bruxas</option>
+                <option value="GVG">Goblin VS Gnomos</option>
+                <option value="ICECROW">Cavaleiros do Trono de Gelo</option>
+                <option value="KARA">Karazham</option>
+                <option value="LOE">Liga dos Exploradores</option>
+                <option value="LOOTAPALOOZA">Kobolds e Catacumbas</option>
+                <option value="OG">Sussuros dos Deuses Antigos</option>
+                <option value="UNGORO">Jornada a Un`Goro</option>
+                <option value="BRM">Montanha Rocha Negra</option>
+                <option value="TROLL">Ringue de Rastakan</option>
+            </select>
+            <input type="text" id="pesquisaTudo">
+            <div class="manaSearch">
+                <input type="checkbox" value="0" id="mana0"><label for="mana0">0</label>
+                <input type="checkbox" value="1" id="mana1"><label for="mana1">1</label>
+                <input type="checkbox" value="2" id="mana2"><label for="mana2">2</label>
+                <input type="checkbox" value="3" id="mana3"><label for="mana3">3</label>
+                <input type="checkbox" value="4" id="mana4"><label for="mana4">4</label>
+                <input type="checkbox" value="5" id="mana5"><label for="mana5">5</label>
+                <input type="checkbox" value="6" id="mana6"><label for="mana6">6</label>
+                <input type="checkbox" value="7" id="mana7"><label for="mana7">7+</label>
+            </div>
+        </div>
     </section>
 
     <!-- seção utilizada para armazenar as cartas selecionadas pelo usuário -->
 
-    <section class="deck" id="deck" style="top:-500px;">
-        <div class="curveManaTotal">
-            <div id="totalCards">0/30</div>
-            <div id="totalArcane">0<img src="img/dust.png"></div>
-        </div>
-        <div class="curvaMana">
-            <div><div class="custo" id="custo_0">0</div><div class="curva" id="curva_0"><div style="height:0%"></div></div><div id="quant_0">0</div></div>
-            <div><div class="custo" id="custo_1">1</div><div class="curva" id="curva_1"><div style="height:0%"></div></div><div id="quant_1">0</div></div>
-            <div><div class="custo" id="custo_2">2</div><div class="curva" id="curva_2"><div style="height:0%"></div></div><div id="quant_2">0</div></div>
-            <div><div class="custo" id="custo_3">3</div><div class="curva" id="curva_3"><div style="height:0%"></div></div><div id="quant_3">0</div></div>
-            <div><div class="custo" id="custo_4">4</div><div class="curva" id="curva_4"><div style="height:0%"></div></div><div id="quant_4">0</div></div>
-            <div><div class="custo" id="custo_5">5</div><div class="curva" id="curva_5"><div style="height:0%"></div></div><div id="quant_5">0</div></div>
-            <div><div class="custo" id="custo_6">6</div><div class="curva" id="curva_6"><div style="height:0%"></div></div><div id="quant_6">0</div></div>
-            <div><div class="custo" id="custo_7">7+</div><div class="curva" id="curva_7"><div style="height:0%"></div></div><div id="quant_7">0</div></div>
-        </div>
-        <div class="deckCards">
+    <section class="collapse multi-collapse" id="deck">
+        <div class="deck">
+            <div>
+                <div class="curveManaTotal">
+                    <div id="totalCards">0/30</div>
+                    <div id="totalArcane">0<img src="img/dust.png"></div>
+                </div>
+                <div class="curvaMana">
+                    <div><div class="custo" id="custo_0">0</div><div class="curva" id="curva_0"><div style="height:0%"></div></div><div id="quant_0">0</div></div>
+                    <div><div class="custo" id="custo_1">1</div><div class="curva" id="curva_1"><div style="height:0%"></div></div><div id="quant_1">0</div></div>
+                    <div><div class="custo" id="custo_2">2</div><div class="curva" id="curva_2"><div style="height:0%"></div></div><div id="quant_2">0</div></div>
+                    <div><div class="custo" id="custo_3">3</div><div class="curva" id="curva_3"><div style="height:0%"></div></div><div id="quant_3">0</div></div>
+                    <div><div class="custo" id="custo_4">4</div><div class="curva" id="curva_4"><div style="height:0%"></div></div><div id="quant_4">0</div></div>
+                    <div><div class="custo" id="custo_5">5</div><div class="curva" id="curva_5"><div style="height:0%"></div></div><div id="quant_5">0</div></div>
+                    <div><div class="custo" id="custo_6">6</div><div class="curva" id="curva_6"><div style="height:0%"></div></div><div id="quant_6">0</div></div>
+                    <div><div class="custo" id="custo_7">7+</div><div class="curva" id="curva_7"><div style="height:0%"></div></div><div id="quant_7">0</div></div>
+                </div>
+            </div>
+            <div class="deckCards">
+            </div>
         </div>
     </section>
 
@@ -103,18 +111,21 @@
             <a href="http://lattes.cnpq.br/5099479023634193" class="lattes" alt="Lattes" target="_blank"></a>
             <a href="https://www.linkedin.com/in/maur%C3%ADcio-pereira-4b954216b" class="linkedin" alt="LinkedIn" target="_blank"></a>
         </div>
-        <div class="wood credits">
+        <div class="credits">
             <p>Site desenvolvimento como atividade para a obtenção de nota na disciplina de Linguagem de Script.<br>Instituto Federal de Ciência e Tecnologia da Paraíba.<br>Professores: Luiz Carlos Rodrigues Chaves; Thiago Jose Marques Moura.</p>
             <p>Desenvolvido por: <br> Maurício Pereira da Costa Junior. <br> &copy; 2018</p>
         </div>
     </footer>
 
-    <!-- scripts js com as funções do site -->
+    <!-- scripts -->
 
-    <!-- <script src="js/data.js"></script> -->
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/deks.js"></script>
+    <!-- inicio bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- fim bootstrap scripts -->
+
+    <script type="module" src="js/main.mjs"></script>
     
 </body>
 </html>
