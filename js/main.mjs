@@ -53,7 +53,7 @@ function filtraTudo(){
                 objeto = j
             }
         }
-        if ( ( regex1.test(objeto.name) || regex1.test(objeto.text) || regex1.test(data.translate[objeto.rarity]) ) && ( regex2.test(objeto.type) ) && ( regex3.test(objeto.set) ) && ( regex4.test(objeto.cost) ) ){
+        if ( ( regex1.test(objeto.name) || regex1.test(objeto.text) || regex1.test(data.translate[objeto.rarity]) || regex1.test(data.translate[objeto.race]) ) && ( regex2.test(objeto.type) ) && ( regex3.test(objeto.set) ) && ( regex4.test(objeto.cost) ) ){
             i.style.display = 'flex'
         } else {
             i.style.display = 'none'
