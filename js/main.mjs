@@ -1,15 +1,16 @@
-import * as lib from './lib.mjs'
-import * as data from './data.mjs'
-
-import '../css/master.css'
-import '../css/deck.css'
-import '../css/cards.css'
-import '../node_modules/popper.js/dist/umd/popper.min.js'
-import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
-import '../node_modules/jquery/dist/jquery.slim.min.js'
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
+import '../node_modules/popper.js/dist/umd/popper.min.js'
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
+import '../node_modules/jquery/dist/jquery.slim.min.js'
+import * as lib from './lib.mjs'
+import * as data from './data.mjs'
+import '../css/master.css'
+import '../css/deck.css'
+import '../css/cards.css'
+
+
 
 // elementos do HTML para pesquisa
 

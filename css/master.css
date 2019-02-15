@@ -230,11 +230,11 @@ header li a:hover{
     opacity: 1;
 }
 .social-midias .lattes {
-    background-image: url(../img/icon/lattes.png);
+    background-image: url('../img/icon/lattes.png');
 }
 .social-midias .github {
-    background-image: url(../img/icon/github.png);
+    background-image: url('../img/icon/github.png');
 }
 .social-midias .linkedin {
-    background-image: url(../img/icon/linkedin.png);
+    background-image: url('../img/icon/linkedin.png');
 }
