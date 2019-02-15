@@ -1,15 +1,24 @@
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
+import '../css/master.css'
+import '../css/deck.css'
+import '../css/cards.css'
 import '../node_modules/popper.js/dist/umd/popper.min.js'
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
 import '../node_modules/jquery/dist/jquery.slim.min.js'
 import * as lib from './lib.mjs'
 import * as data from './data.mjs'
-import '../css/master.css'
-import '../css/deck.css'
-import '../css/cards.css'
 
+import '../img/card-gallery-class.png';
+import '../img/dust.png';
+import '../img/mana-checked.png';
+import '../img/mana.png';
+import '../img/icon/github.png';
+import '../img/icon/lattes.png';
+import '../img/icon/linkedin.png';
+import '../img/icon/logo-hearth.png';
+import '../img/icon/logo-hearthstone-text.png';
 
 
 // elementos do HTML para pesquisa

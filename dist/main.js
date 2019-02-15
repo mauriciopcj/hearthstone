@@ -126,7 +126,18 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"66c09a4924e4ecabae40ac7d9bcd0dc5.png\";\n\n//# sourceURL=webpack:///./img/card-gallery-class.png?");
+eval("module.exports = __webpack_require__.p + \"dist/66c09a4924e4ecabae40ac7d9bcd0dc5.png\";\n\n//# sourceURL=webpack:///./img/card-gallery-class.png?");
+
+/***/ }),
+
+/***/ "./img/dust.png":
+/*!**********************!*\
+  !*** ./img/dust.png ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"dist/9ff0b51927a4be301c40b30c0122c574.png\";\n\n//# sourceURL=webpack:///./img/dust.png?");
 
 /***/ }),
 
@@ -137,7 +148,7 @@ eval("module.exports = __webpack_require__.p + \"66c09a4924e4ecabae40ac7d9bcd0dc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"d2261287536b7717516a3c94d72720fa.png\";\n\n//# sourceURL=webpack:///./img/icon/github.png?");
+eval("module.exports = __webpack_require__.p + \"dist/d2261287536b7717516a3c94d72720fa.png\";\n\n//# sourceURL=webpack:///./img/icon/github.png?");
 
 /***/ }),
 
@@ -148,7 +159,7 @@ eval("module.exports = __webpack_require__.p + \"d2261287536b7717516a3c94d72720f
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"2def72254615ed637bf85cc0a4cc7d5d.png\";\n\n//# sourceURL=webpack:///./img/icon/lattes.png?");
+eval("module.exports = __webpack_require__.p + \"dist/2def72254615ed637bf85cc0a4cc7d5d.png\";\n\n//# sourceURL=webpack:///./img/icon/lattes.png?");
 
 /***/ }),
 
@@ -159,7 +170,7 @@ eval("module.exports = __webpack_require__.p + \"2def72254615ed637bf85cc0a4cc7d5
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"3d63959cfcfab33d914f11f7751cd7c9.png\";\n\n//# sourceURL=webpack:///./img/icon/linkedin.png?");
+eval("module.exports = __webpack_require__.p + \"dist/3d63959cfcfab33d914f11f7751cd7c9.png\";\n\n//# sourceURL=webpack:///./img/icon/linkedin.png?");
 
 /***/ }),
 
@@ -170,7 +181,7 @@ eval("module.exports = __webpack_require__.p + \"3d63959cfcfab33d914f11f7751cd7c
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"d73a784b078a4e71a1ef0c7b3c0662a7.png\";\n\n//# sourceURL=webpack:///./img/icon/logo-hearth.png?");
+eval("module.exports = __webpack_require__.p + \"dist/d73a784b078a4e71a1ef0c7b3c0662a7.png\";\n\n//# sourceURL=webpack:///./img/icon/logo-hearth.png?");
 
 /***/ }),
 
@@ -181,7 +192,7 @@ eval("module.exports = __webpack_require__.p + \"d73a784b078a4e71a1ef0c7b3c0662a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"741820f034a48ecb4f3e9b1b41bc3ac3.png\";\n\n//# sourceURL=webpack:///./img/icon/logo-hearthstone-text.png?");
+eval("module.exports = __webpack_require__.p + \"dist/741820f034a48ecb4f3e9b1b41bc3ac3.png\";\n\n//# sourceURL=webpack:///./img/icon/logo-hearthstone-text.png?");
 
 /***/ }),
 
@@ -192,7 +203,7 @@ eval("module.exports = __webpack_require__.p + \"741820f034a48ecb4f3e9b1b41bc3ac
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"1096441fb3cfffed80fd23cbd39036a6.png\";\n\n//# sourceURL=webpack:///./img/mana-checked.png?");
+eval("module.exports = __webpack_require__.p + \"dist/1096441fb3cfffed80fd23cbd39036a6.png\";\n\n//# sourceURL=webpack:///./img/mana-checked.png?");
 
 /***/ }),
 
@@ -203,7 +214,7 @@ eval("module.exports = __webpack_require__.p + \"1096441fb3cfffed80fd23cbd39036a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"0a89131992b2df74e46c4088b4f37f88.png\";\n\n//# sourceURL=webpack:///./img/mana.png?");
+eval("module.exports = __webpack_require__.p + \"dist/0a89131992b2df74e46c4088b4f37f88.png\";\n\n//# sourceURL=webpack:///./img/mana.png?");
 
 /***/ }),
 
@@ -251,7 +262,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var _node_modules_popper_js_dist_umd_popper_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/popper.js/dist/umd/popper.min.js */ \"./node_modules/popper.js/dist/umd/popper.min.js\");\n/* harmony import */ var _node_modules_bootstrap_dist_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/bootstrap/dist/js/bootstrap.min.js */ \"./node_modules/bootstrap/dist/js/bootstrap.min.js\");\n/* harmony import */ var _node_modules_jquery_dist_jquery_slim_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/jquery/dist/jquery.slim.min.js */ \"./node_modules/jquery/dist/jquery.slim.min.js\");\n/* harmony import */ var _lib_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib.mjs */ \"./js/lib.mjs\");\n/* harmony import */ var _data_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data.mjs */ \"./js/data.mjs\");\n/* harmony import */ var _css_master_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../css/master.css */ \"./css/master.css\");\n/* harmony import */ var _css_deck_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../css/deck.css */ \"./css/deck.css\");\n/* harmony import */ var _css_cards_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../css/cards.css */ \"./css/cards.css\");\n\nwindow.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0__;\nwindow.$ = jquery__WEBPACK_IMPORTED_MODULE_0__;\n\n\n\n\n\n\n\n\n\n\n\n// elementos do HTML para pesquisa\n\nconst tipos = document.querySelector('#type')\nconst expansoes = document.querySelector('#set')\nconst geral = document.querySelector('#pesquisaTudo')\n\n// criar elementos da página inicial\n\n_lib_mjs__WEBPACK_IMPORTED_MODULE_4__[\"heroes\"]()\n\n// filtro geral\n\nfunction filtraTudo(){\n    let cardsFiltrados = Array.from(document.querySelectorAll('.card'))\n\n    // cria regExp 1 para caixa de texto\n    let regex1 = new RegExp(geral.value,'gmi')\n\n    // cria regExp 2 para tipo de carta selecionada\n    let regex2\n    if(tipos.value != 'ALL'){\n        regex2 = new RegExp(tipos.value,'gmi')\n    } else {\n        regex2 = new RegExp('','gmi')\n    }\n\n    // cria regExp 3 para a expansão selecionada\n    let regex3\n    if(expansoes.value != 'ALL'){\n        regex3 = new RegExp(expansoes.value,'gmi')\n    } else {\n        regex3 = new RegExp('','gmi')\n    }\n\n    // cria regExp 4 para o custo da mana\n    let regex4\n    let manas = Array.from(document.querySelectorAll('input[type=checkbox]'))\n    let stringue = ''\n    for(let i of manas){\n        if(i.checked){\n            stringue += i.value\n        }\n    }\n    if(stringue != ''){\n        if(stringue.includes('7')){\n            stringue += '89'\n        }\n        regex4 = new RegExp('['+stringue.split('').join('|')+']','gmi')\n    } else {\n        regex4 = new RegExp('','gmi')\n    }\n\n    // utiliza as RegExp criadas para exibir as cartas de acordo com o filtro\n    for(let i of cardsFiltrados){\n        let objeto\n        for (let j of _lib_mjs__WEBPACK_IMPORTED_MODULE_4__[\"library\"]) {\n            if (i.id == j.id){\n                objeto = j\n            }\n        }\n        if ( ( regex1.test(objeto.name) || regex1.test(objeto.text) || regex1.test(_data_mjs__WEBPACK_IMPORTED_MODULE_5__[\"translate\"][objeto.rarity]) || regex1.test(_data_mjs__WEBPACK_IMPORTED_MODULE_5__[\"translate\"][objeto.race]) ) && ( regex2.test(objeto.type) ) && ( regex3.test(objeto.set) ) && ( regex4.test(objeto.cost) ) ){\n            i.style.display = 'flex'\n        } else {\n            i.style.display = 'none'\n        }\n    }\n}\n\n// evento na caixa de texto\ngeral.addEventListener('keyup', (event) => {\n    event.preventDefault()\n    filtraTudo()\n})\n\n// evento no select tipos\ntipos.addEventListener(\"change\", function() {\n    filtraTudo()\n});\n\n// evento no select expansões\nexpansoes.addEventListener(\"change\", function() {\n    filtraTudo()\n});\n\n// evento no checkbox das manas\nlet observa = Array.from(document.querySelectorAll('input[type=checkbox]'))\n\nfor(let i of observa){\n    i.addEventListener('change', () => {\n        filtraTudo()\n    })\n}\n\n// função para exibir o baralho e a pesquisa\nfunction showHidden(um, dois){\n    if(document.querySelector(um).className.includes('show')){\n        jquery__WEBPACK_IMPORTED_MODULE_0__(um).collapse('toggle')\n        jquery__WEBPACK_IMPORTED_MODULE_0__(dois).collapse('toggle')\n    } else {\n        jquery__WEBPACK_IMPORTED_MODULE_0__(dois).collapse('toggle')\n    }\n}\n\n// evento no botao pesquisar\n_lib_mjs__WEBPACK_IMPORTED_MODULE_4__[\"botaoPesquisa\"].addEventListener('click', (event) => {\n    event.preventDefault()\n    showHidden('#deck','#pesquisa')\n})\n\n// evento no botao baralho\n_lib_mjs__WEBPACK_IMPORTED_MODULE_4__[\"botaoBaralho\"].addEventListener('click', (event) => {\n    event.preventDefault()\n    showHidden('#pesquisa','#deck') \n})\n\n\n//# sourceURL=webpack:///./js/main.mjs?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var _css_master_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/master.css */ \"./css/master.css\");\n/* harmony import */ var _css_deck_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/deck.css */ \"./css/deck.css\");\n/* harmony import */ var _css_cards_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/cards.css */ \"./css/cards.css\");\n/* harmony import */ var _node_modules_popper_js_dist_umd_popper_min_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../node_modules/popper.js/dist/umd/popper.min.js */ \"./node_modules/popper.js/dist/umd/popper.min.js\");\n/* harmony import */ var _node_modules_bootstrap_dist_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../node_modules/bootstrap/dist/js/bootstrap.min.js */ \"./node_modules/bootstrap/dist/js/bootstrap.min.js\");\n/* harmony import */ var _node_modules_jquery_dist_jquery_slim_min_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../node_modules/jquery/dist/jquery.slim.min.js */ \"./node_modules/jquery/dist/jquery.slim.min.js\");\n/* harmony import */ var _lib_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./lib.mjs */ \"./js/lib.mjs\");\n/* harmony import */ var _data_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./data.mjs */ \"./js/data.mjs\");\n/* harmony import */ var _img_card_gallery_class_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/card-gallery-class.png */ \"./img/card-gallery-class.png\");\n/* harmony import */ var _img_dust_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/dust.png */ \"./img/dust.png\");\n/* harmony import */ var _img_mana_checked_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/mana-checked.png */ \"./img/mana-checked.png\");\n/* harmony import */ var _img_mana_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/mana.png */ \"./img/mana.png\");\n/* harmony import */ var _img_icon_github_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../img/icon/github.png */ \"./img/icon/github.png\");\n/* harmony import */ var _img_icon_lattes_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../img/icon/lattes.png */ \"./img/icon/lattes.png\");\n/* harmony import */ var _img_icon_linkedin_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../img/icon/linkedin.png */ \"./img/icon/linkedin.png\");\n/* harmony import */ var _img_icon_logo_hearth_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../img/icon/logo-hearth.png */ \"./img/icon/logo-hearth.png\");\n/* harmony import */ var _img_icon_logo_hearthstone_text_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../img/icon/logo-hearthstone-text.png */ \"./img/icon/logo-hearthstone-text.png\");\n\nwindow.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0__;\nwindow.$ = jquery__WEBPACK_IMPORTED_MODULE_0__;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n// elementos do HTML para pesquisa\n\nconst tipos = document.querySelector('#type')\nconst expansoes = document.querySelector('#set')\nconst geral = document.querySelector('#pesquisaTudo')\n\n// criar elementos da página inicial\n\n_lib_mjs__WEBPACK_IMPORTED_MODULE_7__[\"heroes\"]()\n\n// filtro geral\n\nfunction filtraTudo(){\n    let cardsFiltrados = Array.from(document.querySelectorAll('.card'))\n\n    // cria regExp 1 para caixa de texto\n    let regex1 = new RegExp(geral.value,'gmi')\n\n    // cria regExp 2 para tipo de carta selecionada\n    let regex2\n    if(tipos.value != 'ALL'){\n        regex2 = new RegExp(tipos.value,'gmi')\n    } else {\n        regex2 = new RegExp('','gmi')\n    }\n\n    // cria regExp 3 para a expansão selecionada\n    let regex3\n    if(expansoes.value != 'ALL'){\n        regex3 = new RegExp(expansoes.value,'gmi')\n    } else {\n        regex3 = new RegExp('','gmi')\n    }\n\n    // cria regExp 4 para o custo da mana\n    let regex4\n    let manas = Array.from(document.querySelectorAll('input[type=checkbox]'))\n    let stringue = ''\n    for(let i of manas){\n        if(i.checked){\n            stringue += i.value\n        }\n    }\n    if(stringue != ''){\n        if(stringue.includes('7')){\n            stringue += '89'\n        }\n        regex4 = new RegExp('['+stringue.split('').join('|')+']','gmi')\n    } else {\n        regex4 = new RegExp('','gmi')\n    }\n\n    // utiliza as RegExp criadas para exibir as cartas de acordo com o filtro\n    for(let i of cardsFiltrados){\n        let objeto\n        for (let j of _lib_mjs__WEBPACK_IMPORTED_MODULE_7__[\"library\"]) {\n            if (i.id == j.id){\n                objeto = j\n            }\n        }\n        if ( ( regex1.test(objeto.name) || regex1.test(objeto.text) || regex1.test(_data_mjs__WEBPACK_IMPORTED_MODULE_8__[\"translate\"][objeto.rarity]) || regex1.test(_data_mjs__WEBPACK_IMPORTED_MODULE_8__[\"translate\"][objeto.race]) ) && ( regex2.test(objeto.type) ) && ( regex3.test(objeto.set) ) && ( regex4.test(objeto.cost) ) ){\n            i.style.display = 'flex'\n        } else {\n            i.style.display = 'none'\n        }\n    }\n}\n\n// evento na caixa de texto\ngeral.addEventListener('keyup', (event) => {\n    event.preventDefault()\n    filtraTudo()\n})\n\n// evento no select tipos\ntipos.addEventListener(\"change\", function() {\n    filtraTudo()\n});\n\n// evento no select expansões\nexpansoes.addEventListener(\"change\", function() {\n    filtraTudo()\n});\n\n// evento no checkbox das manas\nlet observa = Array.from(document.querySelectorAll('input[type=checkbox]'))\n\nfor(let i of observa){\n    i.addEventListener('change', () => {\n        filtraTudo()\n    })\n}\n\n// função para exibir o baralho e a pesquisa\nfunction showHidden(um, dois){\n    if(document.querySelector(um).className.includes('show')){\n        jquery__WEBPACK_IMPORTED_MODULE_0__(um).collapse('toggle')\n        jquery__WEBPACK_IMPORTED_MODULE_0__(dois).collapse('toggle')\n    } else {\n        jquery__WEBPACK_IMPORTED_MODULE_0__(dois).collapse('toggle')\n    }\n}\n\n// evento no botao pesquisar\n_lib_mjs__WEBPACK_IMPORTED_MODULE_7__[\"botaoPesquisa\"].addEventListener('click', (event) => {\n    event.preventDefault()\n    showHidden('#deck','#pesquisa')\n})\n\n// evento no botao baralho\n_lib_mjs__WEBPACK_IMPORTED_MODULE_7__[\"botaoBaralho\"].addEventListener('click', (event) => {\n    event.preventDefault()\n    showHidden('#pesquisa','#deck') \n})\n\n\n//# sourceURL=webpack:///./js/main.mjs?");
 
 /***/ }),
 
