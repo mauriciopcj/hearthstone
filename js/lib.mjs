@@ -97,4 +97,4 @@ function adicionar(classe) {
     document.getElementById("cards").insertAdjacentHTML('beforeBegin', artInsert(classe)) // insere uma arte especifica da classe no título da página
 }
 
-export { heroes, library }
+export { heroes, library, botaoPesquisa, botaoBaralho }

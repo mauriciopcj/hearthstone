@@ -14,28 +14,25 @@
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#pesquisa" id="buttonSearch" aria-expanded="false" data-toggle="collapse" aria-controls="pesquisa" style="display:none">Pesquisa</a></li>
+                <li><a href="#pesquisa" id="buttonSearch" style="display:none">Pesquisa</a></li>
                 <a href="index.html"><li class="logo"></li></a>
-                <li><a href="#deck" id="buttonDeck" data-toggle="collapse" aria-expanded="false" aria-controls="deck" style="display:none">Baralho</a></li>
+                <li><a href="#deck" id="buttonDeck" style="display:none">Baralho</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- filtros de pesquisa -->
 
-    <section id="pesquisa" class="collapse multi-collapse filter">
+    <section id="pesquisa" class="collapse filter">
         <div class="pesquisaLayout">
             <select name="type" id="type">
-                <option value="ALL">TIPO</option>
-                <option value="ALL">Todos</option>
+                <option value="ALL">Todos os tipos</option>
                 <option value="MINION">Lacaio</option>
                 <option value="SPELL">Feitiço</option>
                 <option value="WEAPON">Arma</option>
-                <!-- <option value="HERO">Herói</option> -->
             </select>
             <select name="set" id="set">
-                <option value="ALL">EXPANSÃO</option>
-                <option value="ALL">Todas</option>
+                <option value="ALL">Todas as expansões</option>
                 <option value="TGT">O Grande Torneio</option>
                 <option value="BOOMSDAY">Projeto Cabum</option>
                 <option value="GANGS">Gangues de Geringontzan</option>
@@ -54,25 +51,27 @@
                 <option value="BRM">Montanha Rocha Negra</option>
                 <option value="TROLL">Ringue de Rastakan</option>
             </select>
-            <input type="text" id="pesquisaTudo">
-            <div class="manaSearch">
-                <input type="checkbox" value="0" id="mana0"><label for="mana0">0</label>
-                <input type="checkbox" value="1" id="mana1"><label for="mana1">1</label>
-                <input type="checkbox" value="2" id="mana2"><label for="mana2">2</label>
-                <input type="checkbox" value="3" id="mana3"><label for="mana3">3</label>
-                <input type="checkbox" value="4" id="mana4"><label for="mana4">4</label>
-                <input type="checkbox" value="5" id="mana5"><label for="mana5">5</label>
-                <input type="checkbox" value="6" id="mana6"><label for="mana6">6</label>
-                <input type="checkbox" value="7" id="mana7"><label for="mana7">7+</label>
+            <input type="text" id="pesquisaTudo" placeholder="Pesquisar">
+            <div>
+                <div class="manaSearch">
+                    <input type="checkbox" value="0" id="mana0"><label for="mana0">0</label>
+                    <input type="checkbox" value="1" id="mana1"><label for="mana1">1</label>
+                    <input type="checkbox" value="2" id="mana2"><label for="mana2">2</label>
+                    <input type="checkbox" value="3" id="mana3"><label for="mana3">3</label>
+                    <input type="checkbox" value="4" id="mana4"><label for="mana4">4</label>
+                    <input type="checkbox" value="5" id="mana5"><label for="mana5">5</label>
+                    <input type="checkbox" value="6" id="mana6"><label for="mana6">6</label>
+                    <input type="checkbox" value="7" id="mana7"><label for="mana7">7+</label>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- seção utilizada para armazenar as cartas selecionadas pelo usuário -->
 
-    <section class="collapse multi-collapse" id="deck">
+    <section class="collapse" id="deck">
         <div class="deck">
-            <div>
+            <div class="curvePai">
                 <div class="curveManaTotal">
                     <div id="totalCards">0/30</div>
                     <div id="totalArcane">0<img src="img/dust.png"></div>
@@ -119,13 +118,7 @@
 
     <!-- scripts -->
 
-    <!-- inicio bootstrap scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <!-- fim bootstrap scripts -->
-
-    <script type="module" src="js/main.mjs"></script>
+    <script type="module" src="dist/main.js"></script>
     
 </body>
 </html>

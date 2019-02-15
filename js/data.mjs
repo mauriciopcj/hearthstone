@@ -1,6 +1,59 @@
-const heroes = [ "MAGE","HUNTER","WARRIOR","PRIEST","WARLOCK","ROGUE","DRUID","SHAMAN","PALADIN"]
+const heroes = [ 
+    "MAGE",
+    "HUNTER",
+    "WARRIOR",
+    "PRIEST",
+    "WARLOCK",
+    "ROGUE",
+    "DRUID",
+    "SHAMAN",
+    "PALADIN"
+]
 
-const translate = { "MAGE":"Mago", "HUNTER":"Caçador", "WARRIOR":"Guerreiro", "PRIEST":"Sarcedote", "WARLOCK":"Bruxo", "ROGUE":"Ladino", "DRUID":"Druida", "SHAMAN":"Xamã", "PALADIN":"Paladino", "ALL":"Todos", "TGT":"O Grande Torneio", "BOOMSDAY":"Projeto Cabum", "GANGS":"Gangues de Geringontzan", "CORE":"Clássico", "EXPERT1":"Experiência", "HOF":"Hall da Fama", "NAXX":"Naxxaramas", "GILNEAS":"Bosque das Bruxas", "GVG":"Goblin VS Gnomos", "ICECROW":"Cavaleiros do Trono de Gelo", "KARA":"Karazham", "LOE":"Liga dos Exploradores", "LOOTAPALOOZA":"Kobolds e Catacumbas", "OG":"Sussuros dos Deuses Antigos", "UNGORO":"Jornada a Un`Goro", "BRM":"Montanha Rocha Negra", "TROLL":"Ringue de Rastakan", "MINION":"Lacaio", "SPELL":"Feitiço", "WEAPON":"Arma", "HERO":"Herói", "COMMON":"Comum", "RARE":"Raro", "EPIC":"Épico", "LEGENDARY":"Lendário"
+const translate = { 
+    "MAGE":"Mago", 
+    "HUNTER":"Caçador", 
+    "WARRIOR":"Guerreiro", 
+    "PRIEST":"Sarcedote", 
+    "WARLOCK":"Bruxo", 
+    "ROGUE":"Ladino", 
+    "DRUID":"Druida", 
+    "SHAMAN":"Xamã", 
+    "PALADIN":"Paladino", 
+    "ALL":"Todos", 
+    "TGT":"O Grande Torneio", 
+    "BOOMSDAY":"Projeto Cabum", 
+    "GANGS":"Gangues de Geringontzan", 
+    "CORE":"Clássico", 
+    "EXPERT1":"Experiência", 
+    "HOF":"Hall da Fama", 
+    "NAXX":"Naxxaramas", 
+    "GILNEAS":"Bosque das Bruxas", 
+    "GVG":"Goblin VS Gnomos", 
+    "ICECROW":"Cavaleiros do Trono de Gelo", 
+    "KARA":"Karazham", 
+    "LOE":"Liga dos Exploradores", 
+    "LOOTAPALOOZA":"Kobolds e Catacumbas", 
+    "OG":"Sussuros dos Deuses Antigos", 
+    "UNGORO":"Jornada a Un`Goro", 
+    "BRM":"Montanha Rocha Negra", 
+    "TROLL":"Ringue de Rastakan", 
+    "MINION":"Lacaio", 
+    "SPELL":"Feitiço", 
+    "WEAPON":"Arma", 
+    "HERO":"Herói", 
+    "COMMON":"Comum", 
+    "RARE":"Raro", 
+    "EPIC":"Épico", 
+    "LEGENDARY":"Lendário",
+    "MECHANICAL" : "Mecanoide",
+    "MURLOC" : "Murloc",
+    "ELEMENTAL" : "Elemental",
+    "BEAST" : "Fera",
+    "PIRATE" : "Pirata",
+    "DEMON" : "Demônio",
+    "DRAGON" : "Dragão",
+    "TOTEM" : "Toten"
 }
 
 export { heroes, translate }

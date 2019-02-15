@@ -79,6 +79,7 @@ header li a:hover{
     color: #c9c186;
     border-radius: 10px;
     padding: 0 10px;
+    outline: none;
 }
 
 .pesquisaLayout input:focus {
@@ -92,17 +93,31 @@ header li a:hover{
 
 .pesquisaLayout {
     display: grid;
-    max-width: 300px;
+    max-width: 310px;
     margin: 20px auto;
     grid-gap: 20px;
     background: #161b2a;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     border: 1px solid;
 }
 
+@media screen and (min-width: 740px){
+    .pesquisaLayout {
+        display: grid;
+        max-width: 920px;
+        margin: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 980px){
+    .pesquisaLayout {
+        margin: 20px auto;
+    }
+}
 .manaSearch {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(8,1fr);
 }
 
@@ -115,19 +130,18 @@ header li a:hover{
     -webkit-appearance: none;
     padding: 0;
     background-size: cover;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border: none;
     text-align: center;
     text-shadow: 0px 0px 4px #000;
     color: #fff;
-    font-size: 19px;
+    font-size: 22px;
     margin: 0;
 }
 
 .manaSearch input[type=checkbox]:checked + label {
-    border: 1px solid #fff;
-    border-radius: 50%;
+    background-image: url(../img/mana-checked.png);
 }
 
 /* HEROIS NA PÁGINA INICIAL */

@@ -9,7 +9,7 @@
     display: grid;
     justify-content: normal;
     padding: 9px;
-    height: 300px;
+    max-height: 320px;
     overflow-x: auto;
 }
 
