@@ -95,6 +95,31 @@ function adicionar(classe) {
     botaoPesquisa.setAttribute('style', 'display:show;')
     addCards(classe) // criar as cartas
     document.getElementById("cards").insertAdjacentHTML('beforeBegin', artInsert(classe)) // insere uma arte especifica da classe no título da página
+    document.getElementById("cards").insertAdjacentHTML('beforeBegin', '<div class="toUp"><i class="fas fa-chevron-up"></i></div>')
+    navTop = document.querySelector('.toUp')
+    loadNavTop()
+}
+
+// função para mostrar botão para subir ao todo da página
+
+let navTop
+
+function loadNavTop() {
+    navTop.addEventListener('click', () => {
+        window.scrollTo({
+            behavior: 'smooth',
+            top: 0,
+            left: 0
+        })
+    })
+  
+    document.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight * 1/3) {
+            navTop.style = 'display:flex'
+        } else {
+            navTop.style = 'display:none'
+        }
+    })
 }
 
 export { heroes, library, botaoPesquisa, botaoBaralho }

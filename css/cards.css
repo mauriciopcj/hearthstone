@@ -82,3 +82,18 @@
 .art_hunter {background-position-x: -305px;background-position-y: -470px;}
 .art_warrior {background-position-x: -521px; background-position-y: -342px;}
 .art_all {background-position-x: 1px; background-position-y: -296px;}
+
+.toUp{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #161b2a;
+    justify-content: center;
+    display: none;
+    align-items: center;
+    z-index: 2;
+    font-size: 30px;
+    border-radius: 5px;
+}
