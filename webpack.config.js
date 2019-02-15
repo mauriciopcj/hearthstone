@@ -3,10 +3,25 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   
-  entry: './dist/main.mjs',
+  entry: './js/main.mjs',
   
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: 'main.js',
+    path: path.resolve( 'dist')
+  },
+  module: {
+    rules: [
+      {  
+        test: /\.js$/,  
+        use: 'babel-loader'  
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
+      }
+    ]
   }
 };
