@@ -9,13 +9,14 @@
     display: grid;
     justify-content: normal;
     padding: 9px;
-    max-height: 320px;
+    max-height: 50vh;
     overflow-x: auto;
 }
 
 @media screen and (min-width:650px){
     .deck {
         grid-template-columns: 1fr 1fr;
+        max-height: 225px;
     }
 }
 
