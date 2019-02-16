@@ -1,35 +1,45 @@
+#deck {
+    padding: 0px 20px;
+}
+
 .deck {
     justify-items: center;
-    background: #2d4669;
     box-shadow: inset 0px 0px 20px #000;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #172735;
     grid-gap: 2px;
-    width: 100%;
+    width: 310px;
     display: grid;
     justify-content: normal;
-    padding: 9px;
-    max-height: 50vh;
     overflow-x: auto;
+    margin: 20px auto;
+    background: #161b2a;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    min-height: 227px;
 }
 
 @media screen and (min-width:650px){
     .deck {
         grid-template-columns: 1fr 1fr;
-        max-height: 225px;
+        max-height: 227px;
+        width: 100%;
+        max-width: 920px;
     }
 }
 
 .deckCards {
     display: grid;
     grid-gap: 2px;
+    overflow-x: auto;
+    max-height: 205px;
+    padding-right: 20px;
 }
 
 /* curva de mana no deck */
 
 .curvaMana {
     display: flex;
-    width: 305px;
+    width: 280px;
     height: 170px;
     justify-content: space-around;
     background: #18182d;
@@ -61,7 +71,7 @@
 .curveManaTotal {
     display: flex;
     justify-content: space-around;
-    width: 305px;
+    width: 280px;
     align-items: center;
     padding: 5px 0;
     background: #000;
@@ -84,7 +94,7 @@
 }
 
 .img img{
-    max-height: 50px;
+    max-height: 45px;
 }
 
 .text-card {
@@ -103,7 +113,7 @@
 .num-deck {
     font-family: Belwe Bold, Sans-serif;
     color: #fff;
-    width: 35px;
+    width: 36px;
     height: 100%;
     margin: 0;
     display: flex;
@@ -113,7 +123,7 @@
     text-shadow: 1px 0px 3px #000;
 }
 
-.mana { background: #000;background-image: url('../img/mana.png');background-size: cover;width: 50px;}
+.mana { background: #000;background-image: url('../img/mana.png');background-size: cover;width: 45px;}
 .LEGENDARY { background: rgb(255, 209, 4)}
 .EPIC { background: #830da7;}
 .RARE { background: #0d65a7;}
@@ -123,5 +133,5 @@
 .row-card {
     display: flex;
     border: 2px solid #000;
-    height: 54px;
+    height: 49px;
 }
